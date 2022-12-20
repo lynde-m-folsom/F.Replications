@@ -73,8 +73,8 @@ What's the proportion of "significant" results ($p < .05$) that you see?
 First do this using a `for` loop.
 
 ```{r}
-randdf <- for($(1:10000) 
-  in ${1:rnorm(mean = 0, sd = 1, n = 30)}) ${$p < .05$}}
+for($(1:10000) 
+    in ${1:rnorm(mean = 0, sd = 1, n = 30)}) ${$p < .05$}}
 
 
 ```
@@ -82,6 +82,8 @@ randdf <- for($(1:10000)
 Next, do this using the `replicate` function:
 
 ```{r}
+
+
 ```
 
 How does this compare to the intended false-positive rate of $\alpha=0.05$?
